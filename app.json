@@ -20,11 +20,17 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#888888"
+      },
+      "package": "com.kauangarciasasilva.tabelabrasileirao2"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "426eba34-a05d-4573-b544-1bac70bf7de1"
+      }
     }
   }
 }
