@@ -1,9 +1,10 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from '@react-navigation/native';
 import React from "react";
-import DetailPage from "./scr/entitys/page/detail-page";
-import HomePage from "./scr/entitys/page/home-page";
-import Tabela from "./scr/entitys/components/tabela-componets";
+
+import Tabela from "./tabela/tabela-componets";
+import TimeInfo from "./time/componets/time-info-componets";
+import TimesController from "./time/time-controller";
 
 
 export default function App(){
@@ -15,8 +16,9 @@ export default function App(){
     return(
         <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name="Home" component={HomePage} />
-          <Stack.Screen name="detail" component={DetailPage} />
+          
+          <Stack.Screen name="Time" component={TimesController} />
+          <Stack.Screen name="TimeInfo" component={TimeInfo} />
           <Stack.Screen name="Tabela" component={Tabela} />
         </Stack.Navigator>
       </NavigationContainer>

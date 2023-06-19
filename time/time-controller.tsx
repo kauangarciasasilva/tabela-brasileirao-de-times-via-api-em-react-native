@@ -4,7 +4,7 @@ import { FlatList, StyleSheet, Text, TouchableHighlight, View } from 'react-nati
 import { Image } from 'expo-image';
 
 
-import NavTimes from '../components/navTimes-componets';
+import NavTimes from './componets/navTimes-componets';
 import TeamEntity from '../entity/team-Entity';
 
 
@@ -12,7 +12,8 @@ import TeamEntity from '../entity/team-Entity';
 
 
 
-export default function HomePage({ navigation }) {
+
+export default function TimesController({ navigation }) {
 
     //Linha do state
     const [teams, setTeam] = useState<TeamEntity[]>([]);
@@ -72,7 +73,7 @@ export default function HomePage({ navigation }) {
 
 
                             <TouchableHighlight
-                                onPress={() => navigation.navigate('detail', team.item)}
+                                onPress={() => navigation.navigate('TimeInfo', team.item)}
                             >
                                 <View style={styles.item}>
                                     <Image style={styles.shield} source={team.item.team_shield_url} />

@@ -1,10 +1,18 @@
 import React, { } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { Image } from 'expo-image';
-export default function DetailPage({ route, navigation }) {
+export default function TimeInfo({ route, navigation }) {
 
-    const { team_name, team_shield_url, position, team_points, team_gols_pro, team_saldo_gols, team_gols_contra } = route.params;
+    const { team_name, 
+        team_shield_url,
+         position, team_points,
+          team_gols_pro,
+           team_saldo_gols,
+            team_gols_contra
+         } = route.params;
+
     console.log(team_name, team_shield_url)
+
     return (
 
         <View style={styles.container}>

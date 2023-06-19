@@ -9,6 +9,7 @@ import TeamEntity from '../entity/team-Entity';
 
 
 
+
 export default function Tabela() {
 
   //Linha do state
